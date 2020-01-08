@@ -28,6 +28,8 @@ echo "<h3>printArr()</h3>";
 printArr($numbers);
 echo "<br><h3>largest()</h3>";
 echo largest($numbers)."<br>";
+echo "<br><h3>removeDups()</h3>";
+printArr(removeDups($numbers));
 ?>
 </body>
 </html>
