@@ -30,6 +30,12 @@ echo "<br><h3>largest()</h3>";
 echo largest($numbers)."<br>";
 echo "<br><h3>removeDups()</h3>";
 printArr(removeDups($numbers));
+echo "<br><h3>distribution()</h3>";
+echo "[";
+foreach (distribution($numbers) AS $k => $v){
+    echo " $k => $v,";
+}
+echo "]";
 ?>
 </body>
 </html>

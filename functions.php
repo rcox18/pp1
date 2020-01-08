@@ -3,7 +3,7 @@
 use function Sodium\add;
 
 function printArr($arr){
-    foreach ($arr as $i){
+    foreach ($arr AS $i){
         echo "$i<br>";
     }
 }
@@ -26,4 +26,19 @@ function removeDups($arr){
         }
     }
     return $newArr;
+}
+
+function distribution($arr){
+    $tempArr = removeDups($arr);
+    $newAssoc = array();
+    foreach ($tempArr AS $i){
+        $newAssoc[$i] = 0;
+    }
+    foreach ($arr AS $j){
+        if(array_key_exists($j, $newAssoc)){
+            $newAssoc[$j]++;
+        }
+    }
+    ksort($newAssoc);
+    return $newAssoc;
 }
