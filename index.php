@@ -8,6 +8,7 @@
  **/
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
+include "functions.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,12 +23,6 @@ error_reporting(E_ALL);
 <h1>Pair Program 1</h1>
 <?php
 $numbers = array(7, 9, 8, 9, 8, 8, 6);
-
-function printArr($arr){
-    foreach ($arr as $i){
-        echo "$i<br>";
-    }
-}
 
 printArr($numbers);
 ?>
