@@ -24,7 +24,10 @@ include "functions.php";
 <?php
 $numbers = array(7, 9, 8, 9, 8, 8, 6);
 
+echo "<h3>printArr()</h3>";
 printArr($numbers);
+echo "<br><h3>largest()</h3>";
+echo largest($numbers)."<br>";
 ?>
 </body>
 </html>

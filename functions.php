@@ -5,3 +5,13 @@ function printArr($arr){
         echo "$i<br>";
     }
 }
+
+function largest($arr){
+    $largest = 0;
+    foreach ($arr AS $i){
+        if($i > $largest){
+            $largest = $i;
+        }
+    }
+    return $largest;
+}
